@@ -240,6 +240,16 @@ button { color: inherit; }
 .contact-card p:not(.contact-kicker) { margin: 0 0 25px; color: var(--muted); font-size: .9rem; }
 .contact-address { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; overflow-wrap: anywhere; font-weight: 800; }
 .contact-address span { color: var(--coral); font-size: 1.35rem; }
+.report-page { background: var(--cream); }
+.report-intro { padding: 78px 0 34px; }
+.report-intro h1 { margin: 0 0 24px; font-size: clamp(3rem, 7vw, 5.8rem); line-height: .95; letter-spacing: -.07em; }
+.report-safety-note { margin-top: 28px; padding: 18px 20px; background: #ffe1dc; border-left: 5px solid var(--coral); border-radius: 10px; }
+.report-form-section { padding: 20px 0 60px; }
+.report-form-shell { width: min(calc(100% - 28px), 820px); margin-inline: auto; padding: 22px; background: var(--cream); border: 2px solid var(--navy); border-radius: 22px; box-shadow: 8px 8px 0 var(--navy); }
+.report-form-shell iframe { display: block; min-height: 400px; }
+.form-fallback { margin: 18px 0 0; text-align: center; color: var(--muted); font-size: .8rem; }
+.form-fallback a { font-weight: 800; }
+.report-after { padding-bottom: 100px; }
 
 @media (max-width: 980px) {
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -282,6 +292,8 @@ button { color: inherit; }
   .principles-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .identity-card { padding: 23px; }
+  .report-intro { padding-top: 58px; }
+  .report-form-shell { padding: 8px; box-shadow: 5px 5px 0 var(--navy); }
 }
 
 @media (prefers-reduced-motion: reduce) {
