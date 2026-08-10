@@ -49,6 +49,7 @@ button { color: inherit; }
   background: var(--lime); color: var(--navy); font-size: .9rem; letter-spacing: -.08em;
   transform: rotate(-3deg);
 }
+.brand-bang { color: var(--coral); }
 .brand-dot { color: var(--lime); }
 .main-nav { display: flex; align-items: center; gap: 28px; }
 .main-nav a { text-decoration: none; font-size: .92rem; font-weight: 700; }
