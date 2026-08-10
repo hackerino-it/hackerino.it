@@ -49,10 +49,12 @@
           <p class="eyebrow"><span></span> Difesa digitale, senza panico</p>
           <h1>Internet è pieno di furbi. <em>Diventa più furbo tu.</em></h1>
           <p class="hero-lead">Guide semplici e concrete per riconoscere le truffe, proteggere i tuoi account e sistemare i piccoli disastri digitali.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#guide">Trova una guida <span aria-hidden="true">↓</span></a>
-            <a class="button button-ghost" href="chi-siamo.html">Perché Hackerino</a>
-          </div>
+          <form class="hero-search" id="hero-search" role="search">
+            <span class="hero-search-icon" aria-hidden="true">⌕</span>
+            <label class="sr-only" for="guide-search">Descrivi il problema che ti è successo</label>
+            <input id="guide-search" type="search" placeholder="Es. link sospetto, WhatsApp rubato…" autocomplete="off">
+            <button type="submit">Cerca <span aria-hidden="true">→</span></button>
+          </form>
           <p class="trust-note"><span aria-hidden="true">✓</span> Niente allarmismi. Niente tecnicismi inutili.</p>
         </div>
 
@@ -95,12 +97,7 @@
           <p>Non devi conoscere il nome dell’attacco. Scegli la situazione che gli assomiglia di più.</p>
         </div>
 
-        <div class="guide-tools">
-          <label class="search-box" for="guide-search">
-            <span aria-hidden="true">⌕</span>
-            <span class="sr-only">Cerca tra le guide</span>
-            <input id="guide-search" type="search" placeholder="Es. link sospetto, WhatsApp, password…" autocomplete="off">
-          </label>
+        <div class="guide-tools guide-tools-filters">
           <div class="filter-row" aria-label="Filtra le guide">
             <button class="filter-button is-active" type="button" data-filter="tutte">Tutte</button>
             <button class="filter-button" type="button" data-filter="truffe">Truffe</button>

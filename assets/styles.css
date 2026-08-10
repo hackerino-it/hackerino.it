@@ -74,7 +74,20 @@ button { color: inherit; }
 }
 .hero h1 em { color: var(--lime); font-style: normal; }
 .hero-lead { max-width: 620px; margin: 22px 0 0; color: #c9d0d7; font-size: 1.08rem; }
-.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.hero-search {
+  max-width: 620px; min-height: 58px; display: flex; align-items: center; gap: 10px;
+  margin-top: 28px; padding: 5px 5px 5px 16px; background: var(--white); border: 2px solid var(--navy);
+  border-radius: 14px; box-shadow: 5px 5px 0 var(--coral);
+}
+.hero-search-icon { color: var(--navy); font-size: 1.45rem; font-weight: 950; }
+.hero-search input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: var(--ink); }
+.hero-search input::placeholder { color: #707981; opacity: 1; }
+.hero-search button {
+  align-self: stretch; display: inline-flex; align-items: center; gap: 15px; padding: 0 18px;
+  border: 0; border-radius: 9px; background: var(--lime); color: var(--navy); cursor: pointer; font-weight: 900;
+}
+.hero-search button:hover { background: var(--coral); }
+.hero-search:focus-within { outline: 3px solid rgba(201,255,74,.55); outline-offset: 3px; }
 .button {
   display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 52px;
   padding: 0 21px; border: 1px solid transparent; border-radius: 12px; text-decoration: none;
@@ -119,6 +132,7 @@ button { color: inherit; }
 .section-heading h2, .emergency-section h2, .manifesto-card h2 { margin: 0; font-size: clamp(2.5rem, 5vw, 4.7rem); line-height: .98; letter-spacing: -.065em; }
 .section-heading > p { max-width: 430px; margin: 0 0 4px; color: var(--muted); }
 .guide-tools { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+.guide-tools-filters { justify-content: flex-end; }
 .search-box { min-width: min(100%, 430px); display: flex; align-items: center; gap: 10px; padding: 0 15px; background: var(--white); border: 2px solid var(--navy); border-radius: 12px; }
 .search-box > span { font-size: 1.4rem; font-weight: 900; }
 .search-box input { width: 100%; min-height: 49px; border: 0; outline: 0; background: transparent; color: var(--ink); }
@@ -217,6 +231,8 @@ button { color: inherit; }
   .hero-grid { min-height: auto; padding-block: 48px 58px; }
   .hero h1 { font-size: clamp(2.85rem, 14vw, 4.5rem); }
   .hero-lead { font-size: 1rem; }
+  .hero-search { padding-left: 12px; }
+  .hero-search button { padding-inline: 14px; }
   .rescue-card { transform: none; }
   .quick-strip-inner { justify-content: flex-start; overflow-x: auto; }
   .section { padding-block: 75px; }

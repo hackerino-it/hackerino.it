@@ -20,6 +20,7 @@ document.querySelectorAll('[data-current-year]').forEach((element) => {
 });
 
 const searchInput = document.querySelector('#guide-search');
+const searchForm = document.querySelector('#hero-search');
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
 const guideCards = [...document.querySelectorAll('[data-category]')];
 const noResults = document.querySelector('#no-results');
@@ -44,6 +45,11 @@ function filterGuides() {
 }
 
 searchInput?.addEventListener('input', filterGuides);
+searchForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  filterGuides();
+  document.querySelector('#guide')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
     activeFilter = button.dataset.filter;
