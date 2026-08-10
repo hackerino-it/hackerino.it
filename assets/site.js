@@ -48,7 +48,7 @@ searchInput?.addEventListener('input', filterGuides);
 searchForm?.addEventListener('submit', (event) => {
   event.preventDefault();
   filterGuides();
-  document.querySelector('#guide')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.querySelector('#notizie')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
