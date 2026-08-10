@@ -45,9 +45,9 @@ button { color: inherit; }
 .header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-size: 1.2rem; font-weight: 900; letter-spacing: -.04em; }
 .brand-mark {
-  display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px;
-  background: var(--lime); color: var(--navy); font-size: .9rem; letter-spacing: -.08em;
-  transform: rotate(-3deg);
+  display: block; flex: 0 0 auto; width: 44px; height: 44px; border-radius: 11px;
+  background: var(--cream) url("logo-hackerino.png") center / contain no-repeat;
+  color: transparent; font-size: 0; overflow: hidden;
 }
 .brand-dot { color: var(--lime); }
 .main-nav { display: flex; align-items: center; gap: 28px; }
