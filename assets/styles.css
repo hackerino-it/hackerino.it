@@ -326,16 +326,37 @@ button { color: inherit; }
   }
   .main-nav.is-open { display: grid; gap: 5px; }
   .main-nav a { padding: 11px; }
-  .hero-grid { min-height: auto; padding-block: 48px 58px; }
-  .hero h1 { font-size: clamp(2.85rem, 14vw, 4.5rem); }
-  .hero-lead { font-size: 1rem; }
-  .hero-search { padding-left: 12px; }
+  .hero-grid { min-height: auto; gap: 32px; padding-block: 32px 42px; }
+  .hero h1 { font-size: clamp(2.55rem, 12vw, 3.25rem); line-height: .93; }
+  .hero-lead { margin-top: 16px; font-size: .94rem; line-height: 1.55; }
+  .hero-search { min-height: 52px; margin-top: 22px; padding-left: 12px; }
+  .hero-search input { font-size: .78rem; }
   .hero-search button { padding-inline: 14px; }
-  .rescue-card { transform: none; }
-  .section { padding-block: 75px; }
+  .trust-note, .signal { display: none; }
+  .rescue-card { padding: 18px; border-radius: 16px; box-shadow: 6px 6px 0 var(--lime); transform: none; }
+  .rescue-card::before { inset: 7px -8px -8px 7px; }
+  .rescue-topline { padding-bottom: 12px; font-size: .62rem; }
+  .rescue-card h2 { margin: 16px 0 12px; font-size: 1.42rem; }
+  .rescue-list { margin-bottom: 13px; }
+  .rescue-list li { padding: 10px 0; }
+  .rescue-list li:nth-child(n+2) { display: none; }
+  .quick-strip { height: 8px; }
+  .section { padding-block: 52px; }
   .section-heading, .guide-tools { align-items: stretch; flex-direction: column; }
-  .guide-grid { grid-template-columns: 1fr; }
-  .guide-card { min-height: 315px; }
+  .section-heading { gap: 14px; margin-bottom: 24px; }
+  .section-heading h2 { font-size: 2.45rem; }
+  .section-heading > p { font-size: .9rem; }
+  .guide-tools { margin-bottom: 18px; }
+  .filter-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; scrollbar-width: none; }
+  .filter-row::-webkit-scrollbar { display: none; }
+  .filter-button { flex: 0 0 auto; padding: 8px 11px; }
+  .guide-grid { grid-template-columns: 1fr; gap: 12px; }
+  .guide-card { min-height: 0; padding: 17px 17px 15px; border-radius: 14px; }
+  .guide-card-featured { background: var(--white); border-left: 6px solid var(--lime); }
+  .card-icon { display: none; }
+  .guide-card h3 { margin-top: 15px; font-size: 1.15rem; }
+  .guide-card p { margin: 9px 0 13px; font-size: .82rem; line-height: 1.5; }
+  .card-link { margin-top: 0; font-size: .8rem; }
   .emergency-grid { grid-template-columns: 1fr; gap: 42px; }
   .manifesto-card { grid-template-columns: 1fr; padding: 30px; }
   .manifesto-card .button { grid-column: auto; justify-self: stretch; }
