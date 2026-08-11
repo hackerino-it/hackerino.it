@@ -164,6 +164,18 @@ button { color: inherit; }
 .check-list li { display: flex; align-items: start; gap: 14px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,.15); }
 .check-list span { display: grid; place-items: center; flex: 0 0 25px; height: 25px; border-radius: 50%; background: var(--lime); color: var(--navy); font-size: .72rem; font-weight: 950; }
 
+.newsletter-section { background: var(--lime-soft); border-bottom: 2px solid var(--navy); }
+.newsletter-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: center; }
+.newsletter-copy h2 { margin: 0; font-size: clamp(2.7rem, 5vw, 4.8rem); line-height: .96; letter-spacing: -.065em; }
+.newsletter-copy > p:not(.eyebrow) { max-width: 510px; margin: 24px 0; color: var(--muted); font-size: 1.03rem; }
+.newsletter-points { list-style: none; display: grid; gap: 12px; margin: 0; padding: 0; font-size: .9rem; font-weight: 800; }
+.newsletter-points li { display: flex; align-items: center; gap: 11px; }
+.newsletter-points span { display: grid; place-items: center; flex: 0 0 25px; height: 25px; border-radius: 50%; background: var(--navy); color: var(--lime); font-size: .72rem; }
+.newsletter-form-shell { overflow: hidden; padding: 18px; background: var(--white); border: 2px solid var(--navy); border-radius: 22px; box-shadow: 8px 8px 0 var(--coral); }
+.newsletter-form-shell iframe { display: block; width: 100%; max-width: 100%; min-height: 620px; border: 0; }
+.newsletter-fallback { margin: 12px 4px 2px; text-align: center; color: var(--muted); font-size: .76rem; }
+.newsletter-fallback a { font-weight: 850; }
+
 .manifesto-section { padding-block: 84px; }
 .manifesto-card { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 38px; padding: 44px; background: var(--coral); border: 2px solid var(--navy); border-radius: 24px; box-shadow: var(--shadow); }
 .manifesto-badge { display: flex; align-items: center; justify-content: center; width: 92px; height: 92px; background: var(--lime); border: 2px solid var(--navy); border-radius: 22px; font-size: 2rem; font-weight: 950; transform: rotate(-5deg); }
@@ -311,6 +323,7 @@ button { color: inherit; }
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .rescue-card { max-width: 620px; }
   .guide-grid { grid-template-columns: repeat(2, 1fr); }
+  .newsletter-grid { grid-template-columns: 1fr; gap: 38px; }
   .manifesto-card { grid-template-columns: auto 1fr; }
   .manifesto-card .button { grid-column: 2; justify-self: start; }
 }
@@ -358,6 +371,9 @@ button { color: inherit; }
   .guide-card p { margin: 9px 0 13px; font-size: .82rem; line-height: 1.5; }
   .card-link { margin-top: 0; font-size: .8rem; }
   .emergency-grid { grid-template-columns: 1fr; gap: 42px; }
+  .newsletter-copy h2 { font-size: 2.65rem; }
+  .newsletter-form-shell { padding: 6px; border-radius: 16px; box-shadow: 5px 5px 0 var(--coral); }
+  .newsletter-form-shell iframe { min-height: 650px; }
   .manifesto-card { grid-template-columns: 1fr; padding: 30px; }
   .manifesto-card .button { grid-column: auto; justify-self: stretch; }
   .manifesto-badge { width: 72px; height: 72px; }
